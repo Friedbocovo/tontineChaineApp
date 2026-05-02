@@ -1,0 +1,35 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  border: 0.5px solid rgba(0, 0, 0, 0.06);
+}
+
+.badge__prefix {
+  font-size: 11px;
+}
+
+.badge--paid {
+  background: #e1f5ee;
+  color: #0f6e56;
+}
+
+.badge--pending {
+  background: #fff7e6;
+  color: #ba7517;
+}
+
+.badge--late {
+  background: #fcebeb;
+  color: #e24b4a;
+}
+
+.badge--winner {
+  background: #fff7e6;
+  color: #ba7517;
+}
