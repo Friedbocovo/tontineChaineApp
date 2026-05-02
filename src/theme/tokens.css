@@ -1,0 +1,24 @@
+/* TontineChain — alignement maquette Figma */
+:root {
+  --tc-green: #006847;
+  --tc-green-mid: #0f6e56;
+  --tc-green-dark: #0b5c47;
+  --tc-green-soft: #e1f5ee;
+  --tc-mint: #0d8a6a;
+  --tc-orange: #d97b0d;
+  --tc-orange-soft: #fff7e6;
+  --tc-peach: #fde8d4;
+  --tc-danger: #e24b4a;
+  --tc-danger-soft: #fff4f4;
+  --tc-bg-page: #f3f4f6;
+  --tc-card: #ffffff;
+  --tc-text: #1a1a1a;
+  --tc-text-muted: #6b6b6b;
+  --tc-border: #e8e8e8;
+  --tc-shadow: 0 4px 20px rgba(0, 40, 30, 0.08);
+  --tc-radius-card: 18px;
+  --tc-radius-btn: 14px;
+  --tc-nav-h: 64px;
+  --tc-safe-bottom: env(safe-area-inset-bottom, 0px);
+  --font-app: 'DM Sans', system-ui, -apple-system, sans-serif;
+}

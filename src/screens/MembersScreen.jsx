@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import MemberCard from "../components/members/MemberCard";
+import { useNavigate } from 'react-router-dom';
+import MemberCard from '../components/members/MemberCard';
 import {
   members,
   formatMontant,
@@ -7,9 +8,11 @@ import {
   memberDashboardSummary,
 } from '../data/tontineData';
 import { MEMBER_STATUS } from '../theme/memberStatus';
+import { getMemberStatusLabel } from '../utils/memberLabels';
 import './MembersScreen.css';
- 
+
 export default function MembersScreen() {
+  const navigate = useNavigate();
   const [memberList] = useState(members);
   const [selectedMember, setSelectedMember] = useState(null);
 
@@ -25,7 +28,7 @@ export default function MembersScreen() {
             type="button"
             className="membres-header__back"
             aria-label="Retour"
-            onClick={() => window.history.back()}
+            onClick={() => navigate('/ma-tontine')}
           >
             &#8592;
           </button>
@@ -117,7 +120,7 @@ export default function MembersScreen() {
             </div>
             <div className="modal-row">
               <span className="modal-key">Statut</span>
-              <span className="modal-val">{selectedMember.status}</span>
+              <span className="modal-val">{getMemberStatusLabel(selectedMember.status)}</span>
             </div>
             {selectedMember.daysLate > 0 && (
               <div className="modal-row">

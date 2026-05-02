@@ -1,13 +1,18 @@
 /* ── Screen wrapper ── */
 .membres-screen {
-  background: #F5F5F5;
-  min-height: 100vh;
-  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  background: var(--tc-bg-page);
+  min-height: 100%;
+  font-family: var(--font-app);
 }
- 
+
 /* ── Header ── */
 .membres-header {
-  background: linear-gradient(180deg, #0b5c47 0%, #0f6e56 55%, #0c5d49 100%);
+  background: linear-gradient(
+    180deg,
+    var(--tc-green-dark) 0%,
+    var(--tc-green-mid) 55%,
+    var(--tc-green) 100%
+  );
   color: white;
   padding: 16px 20px 20px;
 }
@@ -150,7 +155,7 @@
 }
  
 .membres-add-btn {
-  background: #0F6E56;
+  background: var(--tc-green-mid);
   color: white;
   border: none;
   border-radius: 20px;
@@ -162,7 +167,7 @@
 }
  
 .membres-add-btn:hover {
-  background: #085041;
+  background: var(--tc-green-dark);
 }
  
 /* ── Members list ── */

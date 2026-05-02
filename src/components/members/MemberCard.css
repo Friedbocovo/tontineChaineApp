@@ -1,7 +1,7 @@
 .member-card {
-  background: #fff;
-  border: 0.5px solid #e8e8e8;
-  border-radius: 14px;
+  background: var(--tc-card, #fff);
+  border: 0.5px solid var(--tc-border, #e8e8e8);
+  border-radius: var(--tc-radius-card, 16px);
   padding: 12px 14px;
   display: flex;
   align-items: center;

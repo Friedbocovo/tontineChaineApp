@@ -1,0 +1,19 @@
+@import '../theme/tokens.css';
+
+.app-shell {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-height: 100dvh;
+  font-family: var(--font-app);
+  color: var(--tc-text);
+  text-align: start;
+  background: var(--tc-bg-page);
+}
+
+.app-shell__main {
+  flex: 1;
+  padding-bottom: calc(var(--tc-nav-h) + var(--tc-safe-bottom) + 12px);
+  overflow-x: hidden;
+}

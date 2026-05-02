@@ -42,8 +42,9 @@ export default function MemberCard({ member, onClick }) {
 
       <div className="member-card__info">
         <p className="member-card__name">{member.name}</p>
-
-        {/* Tour masqué tant que la logique on-chain / cycle n'est pas figée */}
+        {member.tourLabel ? (
+          <p className="member-card__sub">{member.tourLabel}</p>
+        ) : null}
       </div>
 
       <div className="member-card__right">

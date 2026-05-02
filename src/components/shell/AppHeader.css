@@ -1,0 +1,67 @@
+.app-header {
+  padding: 12px 18px 8px;
+  background: var(--tc-card);
+  border-bottom: 1px solid var(--tc-border);
+}
+
+.app-header__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-header__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--tc-green-mid), var(--tc-green));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.app-header__spacer {
+  flex: 1;
+}
+
+.app-header__titles {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-header__title {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--tc-text);
+  letter-spacing: -0.02em;
+}
+
+.app-header__sub {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: var(--tc-text-muted);
+}
+
+.app-header__bell {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  background: var(--tc-bg-page);
+  color: var(--tc-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.app-header__bell:hover {
+  background: #e8eaed;
+}
